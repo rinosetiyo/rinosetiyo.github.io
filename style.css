@@ -1,10 +1,23 @@
-html, body {
-  height: 100%;
-  width: 100%;
+.bg-img {
+  background-image: url('images/bg-back.jpg'); /* Ubah path sesuai dengan direktori gambar Anda */
+  background-size: cover;
 }
-.fs-0 {
-  font-size: 1.2rem
+.m-custom {
+  margin-top: 8rem;
 }
-.card-color {
-  background-color: #d1ddff;
+#typewriter {
+    font-weight: bold;
 }
+#typewriter::after {
+    content: '|';
+    display: inline-block;
+    margin-left: 5px;
+    animation: blink-caret 0.75s infinite;
+  }
+  
+@keyframes blink-caret {
+    50% {
+      opacity: 0;
+    }
+  }
+  
